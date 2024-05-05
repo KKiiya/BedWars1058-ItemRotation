@@ -34,7 +34,9 @@ public class StartupUtils {
         config.saveValueIfNotExists("Settings.EnableInSpecificGroups.groups", Arrays.asList("Solo", "Doubles", "3v3v3v3"));
 
         config.saveValueIfNotExists("Items." + new BridgeZapperRotationItem().defaultName() + ".radius", 5);
-        config.saveValueIfNotExists("Items." + new IceBridgeRotationItem().defaultName() + ".block-break.radius", 2);
+        config.saveValueIfNotExists("Items." + new IceBridgeRotationItem().defaultName() + ".length", 30);
+        config.saveValueIfNotExists("Items." + new IceBridgeRotationItem().defaultName() + ".width", 3);
+        config.saveValueIfNotExists("Items." + new IceBridgeRotationItem().defaultName() + ".delay-before-removal", 30);
         config.saveValueIfNotExists("Items." + new SugarkenRotationItem().defaultName() + ".star.speed", 1.0);
         config.saveValueIfNotExists("Items." + new SugarkenRotationItem().defaultName() + ".star.max-range", 100);
         config.saveValueIfNotExists("Items." + new SugarkenRotationItem().defaultName() + ".star.damage", 5.0);
